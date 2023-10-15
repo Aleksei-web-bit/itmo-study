@@ -33,3 +33,19 @@ while count < k:
 my_list.sort()
 
 print(my_list)
+
+mid = len(my_list) // 2
+low = 0
+high = len(my_list) - 1
+
+while my_list[mid] != j and low <= high:
+    if j > my_list[mid]:
+        low = mid + 1
+    else:
+        high = mid - 1
+    mid = (low + high) // 2
+
+if low > high:
+    print("Значение j не найдено!")
+else:
+    print("Индекс =", mid)
