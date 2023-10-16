@@ -31,7 +31,7 @@ while count < k:
 
 my_list.sort()
 
-print(my_list)
+print('Список отсортированных значений:', my_list)
 
 mid = len(my_list) // 2
 low = 0
@@ -47,4 +47,4 @@ while my_list[mid] != j and low <= high:
 if low > high:
     print("Значение j не найдено!")
 else:
-    print("Индекс =", mid)
+    print("Индекс искомого числа в списке:", mid, 'искомое число:', my_list[mid])
