@@ -14,6 +14,7 @@ print('значение j = ', j, 'значение k = ', k, 'значение 
 
 if n >= m:
     print("Ошибка: n должно быть меньше m")
+    exit()
 else:
     for i in range(n, m + 1):
         print(i)
@@ -22,13 +23,11 @@ my_list = []
 count = 0
 
 while count < k:
-    numbers = random.randrange(n, m)
+    number = random.randrange(n, m)
 
-    if numbers not in my_list:
-        my_list.append(numbers)
+    if number not in my_list:
+        my_list.append(number)
         count += 1
-    else:
-        format(numbers)
 
 my_list.sort()
 
